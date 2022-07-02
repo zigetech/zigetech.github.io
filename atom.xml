@@ -2,33 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>子哥の小破站</title>
   
-  
+  <subtitle>子哥の小破站</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-01T09:44:45.339Z</updated>
+  <updated>2022-07-02T03:26:38.810Z</updated>
   <id>http://example.com/</id>
   
   <author>
-    <name>子哥</name>
+    <name>Eric Zige</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>这里是子哥の小破站</title>
-    <link href="http://example.com/2022/07/01/%E8%BF%99%E9%87%8C%E6%98%AF%E5%AD%90%E5%93%A5%E3%81%AE%E5%B0%8F%E7%A0%B4%E7%AB%99/"/>
-    <id>http://example.com/2022/07/01/%E8%BF%99%E9%87%8C%E6%98%AF%E5%AD%90%E5%93%A5%E3%81%AE%E5%B0%8F%E7%A0%B4%E7%AB%99/</id>
-    <published>2022-07-01T09:15:24.000Z</published>
-    <updated>2022-07-01T09:44:45.339Z</updated>
+    <title>Hello World</title>
+    <link href="http://example.com/hello-world/"/>
+    <id>http://example.com/hello-world/</id>
+    <published>2022-07-02T03:27:39.817Z</published>
+    <updated>2022-07-02T03:26:38.810Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;你好鸭，我是子哥&quot;&gt;&lt;a href=&quot;#你好鸭，我是子哥&quot; class=&quot;headerlink&quot; title=&quot;你好鸭，我是子哥 ~&quot;&gt;&lt;/a&gt;你好鸭，我是子哥 ~&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
         
       
     
@@ -38,18 +38,18 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2022/06/19/hello-world/"/>
-    <id>http://example.com/2022/06/19/hello-world/</id>
-    <published>2022-06-19T03:14:39.778Z</published>
-    <updated>2022-06-19T02:56:48.000Z</updated>
+    <title>这里是子哥の小破站</title>
+    <link href="http://example.com/%E8%BF%99%E9%87%8C%E6%98%AF%E5%AD%90%E5%93%A5%E3%81%AE%E5%B0%8F%E7%A0%B4%E7%AB%99/"/>
+    <id>http://example.com/%E8%BF%99%E9%87%8C%E6%98%AF%E5%AD%90%E5%93%A5%E3%81%AE%E5%B0%8F%E7%A0%B4%E7%AB%99/</id>
+    <published>2022-07-01T09:15:24.000Z</published>
+    <updated>2022-07-01T09:44:45.339Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;你好鸭，我是子哥&quot;&gt;&lt;a href=&quot;#你好鸭，我是子哥&quot; class=&quot;headerlink&quot; title=&quot;你好鸭，我是子哥 ~&quot;&gt;&lt;/a&gt;你好鸭，我是子哥 ~&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
         
       
     
