@@ -3,11 +3,11 @@
   <title>子哥の小破站</title>
   
   <subtitle>子哥の小破站</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://www.zigecn.eu.org/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://www.zigecn.eu.org/"/>
   <updated>2022-07-03T01:52:22.196Z</updated>
-  <id>http://example.com/</id>
+  <id>https://www.zigecn.eu.org/</id>
   
   <author>
     <name>Eric Zige</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Office 365 E5 账号申请及永久续期教程</title>
-    <link href="http://example.com/ee2a51ed.html"/>
-    <id>http://example.com/ee2a51ed.html</id>
+    <link href="https://www.zigecn.eu.org/ee2a51ed.html"/>
+    <id>https://www.zigecn.eu.org/ee2a51ed.html</id>
     <published>2022-07-03T01:16:31.000Z</published>
     <updated>2022-07-03T01:52:22.196Z</updated>
     
@@ -42,8 +42,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/4a17b156.html"/>
-    <id>http://example.com/4a17b156.html</id>
+    <link href="https://www.zigecn.eu.org/4a17b156.html"/>
+    <id>https://www.zigecn.eu.org/4a17b156.html</id>
     <published>2022-07-02T03:27:39.817Z</published>
     <updated>2022-07-03T00:55:28.423Z</updated>
     
@@ -63,8 +63,8 @@
   
   <entry>
     <title>这里是子哥の小破站</title>
-    <link href="http://example.com/dfdac00d.html"/>
-    <id>http://example.com/dfdac00d.html</id>
+    <link href="https://www.zigecn.eu.org/dfdac00d.html"/>
+    <id>https://www.zigecn.eu.org/dfdac00d.html</id>
     <published>2022-07-01T09:15:24.000Z</published>
     <updated>2022-07-03T00:55:28.519Z</updated>
     
