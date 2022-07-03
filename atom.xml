@@ -6,7 +6,7 @@
   <link href="https://www.zigecn.eu.org/atom.xml" rel="self"/>
   
   <link href="https://www.zigecn.eu.org/"/>
-  <updated>2022-07-03T07:33:10.002Z</updated>
+  <updated>2022-07-03T07:42:47.841Z</updated>
   <id>https://www.zigecn.eu.org/</id>
   
   <author>
@@ -21,16 +21,10 @@
     <link href="https://www.zigecn.eu.org/65fc21bd.html"/>
     <id>https://www.zigecn.eu.org/65fc21bd.html</id>
     <published>2022-07-03T07:07:11.000Z</published>
-    <updated>2022-07-03T07:33:10.002Z</updated>
+    <updated>2022-07-03T07:42:47.841Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;“EU.org, free domain names since</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;“EU.org, free domain names since 1996”，至今已有二十多年的历史。&lt;br&gt;eu.org是欧盟组织下面的域名，EU代表欧盟，Paul Mockapetris在1996年的9-10月份创建了这个域名的DNS服务器。&lt;br&gt;现在对个人和组织（没见提是不是非盈利性）是免费注册的。貌似cloudflare，hstspreload.org 等大公司认可为顶级域名。&lt;/p&gt;</summary>
     
     
     
@@ -42,19 +36,12 @@
     <link href="https://www.zigecn.eu.org/ee2a51ed.html"/>
     <id>https://www.zigecn.eu.org/ee2a51ed.html</id>
     <published>2022-07-03T01:16:31.000Z</published>
-    <updated>2022-07-03T01:52:22.196Z</updated>
+    <updated>2022-07-03T07:43:43.780Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;续订成功通知&lt;br&gt;&lt;img src=&quot;http://pdsqzlt.tk/zz.jpg&quot; alt=&quot;续订成功&quot; title=&quot;续订成功&quot;&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;申请步骤&quot;&gt;&lt;a href=&quot;#申请步骤&quot;</summary>
-        
-      
+&lt;/blockquote&gt;</summary>
     
     
     
@@ -66,16 +53,10 @@
     <link href="https://www.zigecn.eu.org/4a17b156.html"/>
     <id>https://www.zigecn.eu.org/4a17b156.html</id>
     <published>2022-07-02T03:27:39.817Z</published>
-    <updated>2022-07-03T00:55:28.423Z</updated>
+    <updated>2022-07-03T07:43:11.494Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
     
     
     
@@ -87,16 +68,12 @@
     <link href="https://www.zigecn.eu.org/dfdac00d.html"/>
     <id>https://www.zigecn.eu.org/dfdac00d.html</id>
     <published>2022-07-01T09:15:24.000Z</published>
-    <updated>2022-07-03T00:55:28.519Z</updated>
+    <updated>2022-07-03T07:42:56.413Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;你好鸭，我是子哥&quot;&gt;&lt;a href=&quot;#你好鸭，我是子哥&quot; class=&quot;headerlink&quot; title=&quot;你好鸭，我是子哥 ~&quot;&gt;&lt;/a&gt;你好鸭，我是子哥 ~&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;你好鸭，我是子哥&quot;&gt;&lt;a href=&quot;#你好鸭，我是子哥&quot; class=&quot;headerlink&quot; title=&quot;你好鸭，我是子哥 ~&quot;&gt;&lt;/a&gt;你好鸭，我是子哥 ~&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/lzh2665692/image/master/zige.jpg&quot; alt=&quot;blockchain&quot; title=&quot;区块链&quot;&gt;&lt;br&gt;我，一个啥也不懂的小白，终于花了两天时间，搭建了我的个人博客，由 &lt;strong&gt;Hexo&lt;/strong&gt; 强力驱动，使用 &lt;a href=&quot;https://github.com/Shen-Yu/hexo-theme-ayer&quot;&gt;Ayer&lt;/a&gt; 作为主题。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;下面，我想记录一下我的折腾历程~&lt;/p&gt;</summary>
     
     
     

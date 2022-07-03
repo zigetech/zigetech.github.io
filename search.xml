@@ -6,6 +6,7 @@
     <content><![CDATA[<blockquote>
 <p>续订成功通知<br><img src="http://pdsqzlt.tk/zz.jpg" alt="续订成功" title="续订成功"></p>
 </blockquote>
+<span id="more"></span>
 <h1 id="申请步骤"><a href="#申请步骤" class="headerlink" title="申请步骤"></a><strong>申请步骤</strong></h1><p>1.访问申请链接（链接在文末或评论区给出），点击立即加入开始申请账号<br><img src="https://pic3.zhimg.com/80/v2-c34764ebd92153570bd0a490ece3a536_720w.jpg" alt="1.1" title="1.1"></p>
 <p>2.登录账号<br><img src="https://pic4.zhimg.com/80/v2-6f06aa42431667f523e24b83af18aa9f_720w.jpg" alt="1.2" title="1.2"></p>
 <p>3.注册Office 365 开发人员。下面两个勾选可以只勾选第一个，减少广告，点击下一步继续<br><img src="https://pic2.zhimg.com/80/v2-8cb2d3c57c22f542eba58a01210dc165_720w.jpg" alt="1.3" title="1.3"></p>
@@ -25,6 +26,7 @@
     <title>Hello World</title>
     <url>/4a17b156.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -44,6 +46,7 @@
     <title>免费申请EU.org顶级域名&#39;</title>
     <url>/65fc21bd.html</url>
     <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>“EU.org, free domain names since 1996”，至今已有二十多年的历史。<br>eu.org是欧盟组织下面的域名，EU代表欧盟，Paul Mockapetris在1996年的9-10月份创建了这个域名的DNS服务器。<br>现在对个人和组织（没见提是不是非盈利性）是免费注册的。貌似cloudflare，hstspreload.org 等大公司认可为顶级域名。</p>
+<span id="more"></span>
 <h1 id="申请过程"><a href="#申请过程" class="headerlink" title="申请过程"></a>申请过程</h1><p>1、打开申请页面 <a href="https://nic.eu.org/arf/">https://nic.eu.org/arf/</a> 注册账号<br><img src="https://raw.githubusercontent.com/qiantigers/onetu/master/20210107181606.png" alt="注册账号" title="注册账号"></p>
 <p>2、尽量如实地填写资料，可以参考一下我是怎么写的。<br><img src="https://raw.githubusercontent.com/qiantigers/onetu/master/20210107181750.png" alt="填写资料" title="填写资料"></p>
 <p>3、登录，用户名在你的邮件里<br><img src="https://raw.githubusercontent.com/qiantigers/onetu/master/20210107182311.png" alt="登录" title="登录"></p>
@@ -62,6 +65,7 @@
     <content><![CDATA[<h1 id="你好鸭，我是子哥"><a href="#你好鸭，我是子哥" class="headerlink" title="你好鸭，我是子哥 ~"></a>你好鸭，我是子哥 ~</h1><p><img src="https://raw.githubusercontent.com/lzh2665692/image/master/zige.jpg" alt="blockchain" title="区块链"><br>我，一个啥也不懂的小白，终于花了两天时间，搭建了我的个人博客，由 <strong>Hexo</strong> 强力驱动，使用 <a href="https://github.com/Shen-Yu/hexo-theme-ayer">Ayer</a> 作为主题。</p>
 <hr>
 <p>下面，我想记录一下我的折腾历程~</p>
+<span id="more"></span>
 <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>其实我早就有建站的想法了，但是我清楚地认识到一个事实，那就是<strong>我只会用Wordpress</strong>。<br>举个例子：我们班上有个技术大佬——段某（我这次构建博客也找他交流过技术），在听说我不会 HTML 之后，是这样说的：</p>
 <blockquote>
 <p>html，这东西狗都会</p>
