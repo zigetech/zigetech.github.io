@@ -23,7 +23,7 @@
 ]]></content>
   </entry>
   <entry>
-    <title>免费申请EU.org顶级域名&#39;</title>
+    <title>免费申请EU.org顶级域名</title>
     <url>/65fc21bd.html</url>
     <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>“EU.org, free domain names since 1996”，至今已有二十多年的历史。<br>eu.org是欧盟组织下面的域名，EU代表欧盟，Paul Mockapetris在1996年的9-10月份创建了这个域名的DNS服务器。<br>现在对个人和组织（没见提是不是非盈利性）是免费注册的。貌似cloudflare，hstspreload.org 等大公司认可为顶级域名。</p>
 <span id="more"></span>
@@ -76,6 +76,70 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <p>本文作者：Eric Zige<br />本文地址： <a href="https://www.zigecn.eu.org/4a17b156.html">https://www.zigecn.eu.org/4a17b156.html</a> <br />版权声明：本博客所有文章除特别声明外，均采用CC BY-NC-SA 4.0许可协议。转载请注明出处！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>SSL证书为什么价格差距那么大？哪款SSL证书的性价比高?</title>
+    <url>/166d9192.html</url>
+    <content><![CDATA[<p><a href="https://baike.baidu.com/item/SSL%E8%AF%81%E4%B9%A6/5201468">SSL证书</a>市场品牌和种类众多，用户在选择证书的时候，也能随心所欲的购买到心仪的证书品牌类型。<br>但是也有不少用户在选购的时候，也不禁有疑问：不同的证书品牌和类型为什么价格相差如此之大？</p>
+<span id="more"></span>
+<p>确实，有的证书很便宜，甚至是免费使用，但是有的证书价格却高的出奇。出现这样情况的原因主要是由于品牌和证书类型，以及证书的售后服务方面的原因导致的。</p>
+<h1 id="证书价格差异大的原因"><a href="#证书价格差异大的原因" class="headerlink" title="证书价格差异大的原因"></a>证书价格差异大的原因</h1><h2 id="1、证书品牌不同"><a href="#1、证书品牌不同" class="headerlink" title="1、证书品牌不同"></a>1、证书品牌不同</h2><p>不同品牌的SSL证书在价格上差距较大，主要是因为证书的产品质量有所区别。部分大品牌证书厂商证书签发历史悠久，对产品有较强的专业研究，安全保密性有保障。<br>同时产品的兼容性等也较好，对目前市场上的主流浏览器有良好的兼容性，用户在安装部署后浏览器地址栏都会显示地址是安全提示。</p>
+<h2 id="2、证书类型不同"><a href="#2、证书类型不同" class="headerlink" title="2、证书类型不同"></a>2、证书类型不同</h2><p>DV、OV、EV是目前使用较多的SSL证书类型，其中DV证书的签发验证流程最为简单，用户在申请的时候仅验证域名信息，签发速度快，价格是这三类证书中最低的。<br>OV和EV证书验证流程则是相对复杂些，相较于DV证书，增加了人工核验环节，严谨性可以得到保证。<br>另外，EV证书在部署安装后，在浏览器的地址栏会显示用户公司的名称信息，网站的可信度进一步提升。验证流程的严谨和功能的多样化使得EV证书成为这几种证书中价格价格最高的。</p>
+<p>除此之外，每种证书类型根据域名数量的不同，价格也会有区别。保护单域名的价格较低，而保护多域名和通配符价格较高。</p>
+<h2 id="3、售后保障不同"><a href="#3、售后保障不同" class="headerlink" title="3、售后保障不同"></a>3、售后保障不同</h2><p>从经济学角度来说，证书也属于商品。而在市场经济活动中，所有商品在出售以后，难免会涉及售后的问题。</p>
+<p>SSL证书特别之处在于，它是用来保护用户的数据信息安全，一旦出现问题给客户造成的损失难以预估。所以，售后保障也是各大证书厂商极为重视的问题。<br>一些价格较高的证书品牌，证书厂商都已经为其投入了高额的赔付保障，真正能做到让用户售后无忧。</p>
+<h1 id="常见的证书价格"><a href="#常见的证书价格" class="headerlink" title="常见的证书价格"></a>常见的证书价格</h1><p>这里从腾讯云官网里找到了一些SSL证书的价格，均指首年价格，后续订阅的价格得花更多的钱。</p>
+<table>
+<thead>
+<tr>
+<th align="right">证书品牌</th>
+<th align="right">支持域名</th>
+<th align="right">证书型号</th>
+<th align="right">单价</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">DNSPod</td>
+<td align="right">单个域名</td>
+<td align="right">域名型（DV）SSL 证书</td>
+<td align="right">560元/年</td>
+</tr>
+<tr>
+<td align="right">SecureSite</td>
+<td align="right">单个域名</td>
+<td align="right">企业型（OV）SSL 证书</td>
+<td align="right">5000元/年</td>
+</tr>
+<tr>
+<td align="right">GeoTrust</td>
+<td align="right">单个域名</td>
+<td align="right">企业型（OV）SSL 证书</td>
+<td align="right">2850元/年</td>
+</tr>
+<tr>
+<td align="right">GlobalSign</td>
+<td align="right">单个域名</td>
+<td align="right">企业型（OV）SSL 证书</td>
+<td align="right">3728元/年</td>
+</tr>
+<tr>
+<td align="right">WoTrus</td>
+<td align="right">单个域名</td>
+<td align="right">域名型（DV）SSL 证书</td>
+<td align="right">488元/年</td>
+</tr>
+<tr>
+<td align="right">DNSPod（SM2）</td>
+<td align="right">单个域名</td>
+<td align="right">域名型（DV）SSL 证书</td>
+<td align="right">880元/年</td>
+</tr>
+</tbody></table>
+<p>总之，对我这个草根站长来说，就是“买不起，真的买不起”。</p>
+<h1 id="非常良心国产SSL品牌——Let’s-Encrypt"><a href="#非常良心国产SSL品牌——Let’s-Encrypt" class="headerlink" title="非常良心国产SSL品牌——Let’s Encrypt"></a>非常良心国产SSL品牌——<a href="https://www.mianfeissl.com/">Let’s Encrypt</a></h1><p>Let’s Encrypt目前已基于全球可信根，创新推出全新一代可自动化部署的自主品牌SSL证书。推出了90天的试用，并且可以无限续签。<br>这对喜欢白嫖的草根站长来说就很好了。<br><img src="http://www2.zgtech.top/?/images/2022/07/09/yRkU5eGFT2/Let%27s%20Encrypt.png" alt="Let&#39;s Encrypt"></p>
+<p>免费版的包括<code>单域名证书</code>、<code>通配符证书</code>、<code>多域名证书</code>。<br><img src="http://www2.zgtech.top/?/images/2022/07/09/VkwNPVrw43/Let%27s%20Encrypt2.png" alt="Let&#39;s Encrypt"></p>
+<p>本文作者：Eric Zige<br />本文地址： <a href="https://www.zigecn.eu.org/166d9192.html">https://www.zigecn.eu.org/166d9192.html</a> <br />版权声明：本博客所有文章除特别声明外，均采用CC BY-NC-SA 4.0</div>许可协议。转载请注明出处！</p>
 ]]></content>
   </entry>
 </search>

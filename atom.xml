@@ -2,26 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>子哥の小破站</title>
   
-  <subtitle>子哥の小破站</subtitle>
+  <subtitle>从此只有眼前路，没有身后身</subtitle>
   <link href="https://www.zigecn.eu.org/atom.xml" rel="self"/>
   
   <link href="https://www.zigecn.eu.org/"/>
-  <updated>2022-07-03T07:42:47.841Z</updated>
+  <updated>2022-07-09T12:24:23.707Z</updated>
   <id>https://www.zigecn.eu.org/</id>
   
   <author>
-    <name>Eric Zige</name>
+    <name>子哥</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>免费申请EU.org顶级域名&#39;</title>
+    <title>SSL证书为什么价格差距那么大？哪款SSL证书的性价比高?</title>
+    <link href="https://www.zigecn.eu.org/166d9192.html"/>
+    <id>https://www.zigecn.eu.org/166d9192.html</id>
+    <published>2022-07-09T11:55:10.000Z</published>
+    <updated>2022-07-09T12:24:23.707Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://baike.baidu.com/item/SSL%E8%AF%81%E4%B9%A6/5201468&quot;&gt;SSL证书&lt;/a&gt;市场品牌和种类众多，用户在选择证书的时候，也能随心所欲的购买到心仪的证书品牌类型。&lt;br&gt;但是也有不少用户在选购的时候，也不禁有疑问：不同的证书品牌和类型为什么价格相差如此之大？&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>免费申请EU.org顶级域名</title>
     <link href="https://www.zigecn.eu.org/65fc21bd.html"/>
     <id>https://www.zigecn.eu.org/65fc21bd.html</id>
     <published>2022-07-03T07:07:11.000Z</published>
-    <updated>2022-07-03T07:42:47.841Z</updated>
+    <updated>2022-07-09T08:35:22.491Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;“EU.org, free domain names since 1996”，至今已有二十多年的历史。&lt;br&gt;eu.org是欧盟组织下面的域名，EU代表欧盟，Paul Mockapetris在1996年的9-10月份创建了这个域名的DNS服务器。&lt;br&gt;现在对个人和组织（没见提是不是非盈利性）是免费注册的。貌似cloudflare，hstspreload.org 等大公司认可为顶级域名。&lt;/p&gt;</summary>
