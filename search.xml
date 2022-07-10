@@ -19,7 +19,7 @@
 <h1 id="设置5T网盘容量"><a href="#设置5T网盘容量" class="headerlink" title="设置5T网盘容量"></a><strong>设置5T网盘容量</strong></h1><p>默认onedrive容量是1T，但是可以通过设置更改为5T。 </p>
 <p>1.点击365主页的onedrive图标，若提示“我们目前还在 OneDrive 上设置文件”可以先跳过本步骤，先完成下面的操作。<br>2.打开 <a href="https://admin.onedrive.com/?v=StorageSettings">官网</a> ，也可以在<code>管理中心</code>——<code>所有管理中心</code>——<code>onedrive</code>中找到，更改默认存储为5012GB。<br><img src="https://pic2.zhimg.com/80/v2-bee194f150eefdd27e1982998c9a038d_720w.jpg" alt="3.1" title="3.1"></p>
 <h1 id="无限续期-私人网盘"><a href="#无限续期-私人网盘" class="headerlink" title="无限续期+私人网盘"></a><strong>无限续期+私人网盘</strong></h1><p>1、进入网站<br><a href="https://blog.csdn.net/qq_33212020/article/details/119747634">MS365 E5 Renew X 官方文档</a><br>2.根据官网文档进行配置</p>
-<p>本文作者：Eric Zige<br />本文地址： <a href="https://www.zigecn.eu.org/ee2a51ed.html">https://www.zigecn.eu.org/ee2a51ed.html</a> <br />版权声明：本博客所有文章除特别声明外，均采用CC BY-NC-SA 4.0许可协议。转载请注明出处！</p>
+<p>本文作者：Eric Zige<br />本文地址： <a href="https://www.zigecn.eu.org/ee2a51ed.html">https://www.zigecn.eu.org/ee2a51ed.html</a> <br />版权声明：本博客所有文章除特别声明外，均采用CC BY-NC-SA 4.0</div>许可协议。转载请注明出处！</p>
 ]]></content>
   </entry>
   <entry>
@@ -36,7 +36,7 @@
 <p>6、信息检查，如果出现“Done”的字眼，则表明成功。<br><img src="https://cdn.jsdelivr.net/gh/qiantigers/onetu/20210107184719.png" alt="完毕" title="完毕"></p>
 <p>7、耐心等待审核通过，会有邮件通知。大概3–14天。</p>
 <h1 id="将已经申请好的eu域名托管到Cloudflare"><a href="#将已经申请好的eu域名托管到Cloudflare" class="headerlink" title="将已经申请好的eu域名托管到Cloudflare"></a>将已经申请好的eu域名托管到Cloudflare</h1><p>登入<a href="https://nic.eu.org/arf/en/">管理台</a>,将名称服务器改为cloudflare的就行了</p>
-<p>本文作者：Eric Zige<br />本文地址： <a href="https://www.zigecn.eu.org/65fc21bd.html">https://www.zigecn.eu.org/65fc21bd.html</a> <br />版权声明：本博客所有文章除特别声明外，均采用CC BY-NC-SA 4.0许可协议。转载请注明出处！</p>
+<p>本文作者：Eric Zige<br />本文地址： <a href="https://www.zigecn.eu.org/65fc21bd.html">https://www.zigecn.eu.org/65fc21bd.html</a> <br />版权声明：本博客所有文章除特别声明外，均采用CC BY-NC-SA 4.0</div>许可协议。转载请注明出处！</p>
 ]]></content>
   </entry>
   <entry>
@@ -75,11 +75,11 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<p>本文作者：Eric Zige<br />本文地址： <a href="https://www.zigecn.eu.org/4a17b156.html">https://www.zigecn.eu.org/4a17b156.html</a> <br />版权声明：本博客所有文章除特别声明外，均采用CC BY-NC-SA 4.0许可协议。转载请注明出处！</p>
+<p>本文作者：Eric Zige<br />本文地址： <a href="https://www.zigecn.eu.org/4a17b156.html">https://www.zigecn.eu.org/4a17b156.html</a> <br />版权声明：本博客所有文章除特别声明外，均采用CC BY-NC-SA 4.0</div>许可协议。转载请注明出处！</p>
 ]]></content>
   </entry>
   <entry>
-    <title>SSL证书为什么价格差距那么大？哪款SSL证书的性价比高?</title>
+    <title>SSL证书为什么价格差距那么大？（附免费SSL证书）</title>
     <url>/166d9192.html</url>
     <content><![CDATA[<p><a href="https://baike.baidu.com/item/SSL%E8%AF%81%E4%B9%A6/5201468">SSL证书</a>市场品牌和种类众多，用户在选择证书的时候，也能随心所欲的购买到心仪的证书品牌类型。<br>但是也有不少用户在选购的时候，也不禁有疑问：不同的证书品牌和类型为什么价格相差如此之大？</p>
 <p>确实，有的证书很便宜，甚至是免费使用，但是有的证书价格却高的出奇。出现这样情况的原因主要是由于品牌和证书类型，以及证书的售后服务方面的原因导致的。</p>
@@ -143,7 +143,7 @@
 ]]></content>
   </entry>
   <entry>
-    <title>GitHub Pages+Hexo博客搭建教程</title>
+    <title>Github Pages+Hexo搭建静态博客</title>
     <url>/9b2b00ac.html</url>
     <content><![CDATA[<p>本文讲述的Hexo博客搭建主要是配合GitHub来进行部署，不需要购买任何服务器。<br>搭建大致分为三个流程：准备工作、安装Hexo以及部署在GitHub，下面介绍详细流程。<br>（PS：本博客就是使用Hexo+GitHub的方法搭建的）</p>
 <hr>
