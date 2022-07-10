@@ -6,7 +6,7 @@
   <link href="https://www.zigecn.eu.org/atom.xml" rel="self"/>
   
   <link href="https://www.zigecn.eu.org/"/>
-  <updated>2022-07-10T08:17:41.392Z</updated>
+  <updated>2022-07-10T08:54:39.103Z</updated>
   <id>https://www.zigecn.eu.org/</id>
   
   <author>
@@ -17,11 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用Github Pages和Gridea搭建个人博客</title>
+    <link href="https://www.zigecn.eu.org/85a4b1c9.html"/>
+    <id>https://www.zigecn.eu.org/85a4b1c9.html</id>
+    <published>2022-07-10T08:24:27.000Z</published>
+    <updated>2022-07-10T08:54:39.103Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;之前我写过一个关于如何使用Hexo博客系统搭建静态博客的博文：&lt;a href=&quot;https://www.zigecn.eu.org/9b2b00ac.html&quot;&gt;博客原文&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有同学跟我说像Hexo这样的静态博客使用不方便，因为需要熟悉Git命令，对非计算机专业同学来说很不友好，增加了其学习成本。&lt;br&gt;不过我后来又发现了一个超级棒的静态博客写作客户端——Gridea。即使是非计算机同学，也能愉快地构建并管理博客。&lt;/p&gt;
+&lt;p&gt;本文，我就来教大家如何来使用Github Pages和Gridea来搭建个人博客~&lt;/p&gt;
+&lt;h1 id=&quot;关于Github-Pages&quot;&gt;&lt;a href=&quot;#关于Github-Pages&quot; class=&quot;headerlink&quot; title=&quot;关于Github Pages&quot;&gt;&lt;/a&gt;关于Github Pages&lt;/h1&gt;&lt;p&gt;官方文档：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GitHub Pages 是一项静态站点托管服务，它直接从 GitHub 上的仓库获取 HTML、CSS 和 JavaScript 文件，（可选）通过构建过程运行文件，然后发布网站。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>免费申请EU.org顶级域名</title>
+    <link href="https://www.zigecn.eu.org/65fc21bd.html"/>
+    <id>https://www.zigecn.eu.org/65fc21bd.html</id>
+    <published>2022-07-05T07:07:11.000Z</published>
+    <updated>2022-07-10T08:27:37.734Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;“EU.org, free domain names since 1996”，至今已有二十多年的历史。&lt;br&gt;eu.org是欧盟组织下面的域名，EU代表欧盟，Paul Mockapetris在1996年的9-10月份创建了这个域名的DNS服务器。&lt;br&gt;现在对个人和组织（没见提是不是非盈利性）是免费注册的。貌似cloudflare，hstspreload.org 等大公司认可为顶级域名。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>SSL证书为什么价格差距那么大？（附免费SSL证书）</title>
     <link href="https://www.zigecn.eu.org/166d9192.html"/>
     <id>https://www.zigecn.eu.org/166d9192.html</id>
-    <published>2022-07-09T11:55:10.000Z</published>
-    <updated>2022-07-10T08:17:41.392Z</updated>
+    <published>2022-07-04T08:48:10.000Z</published>
+    <updated>2022-07-10T08:27:31.085Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://baike.baidu.com/item/SSL%E8%AF%81%E4%B9%A6/5201468&quot;&gt;SSL证书&lt;/a&gt;市场品牌和种类众多，用户在选择证书的时候，也能随心所欲的购买到心仪的证书品牌类型。&lt;br&gt;但是也有不少用户在选购的时候，也不禁有疑问：不同的证书品牌和类型为什么价格相差如此之大？&lt;/p&gt;
@@ -34,45 +70,34 @@
   </entry>
   
   <entry>
-    <title>免费申请EU.org顶级域名</title>
-    <link href="https://www.zigecn.eu.org/65fc21bd.html"/>
-    <id>https://www.zigecn.eu.org/65fc21bd.html</id>
-    <published>2022-07-03T07:07:11.000Z</published>
-    <updated>2022-07-10T08:18:53.137Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;“EU.org, free domain names since 1996”，至今已有二十多年的历史。&lt;br&gt;eu.org是欧盟组织下面的域名，EU代表欧盟，Paul Mockapetris在1996年的9-10月份创建了这个域名的DNS服务器。&lt;br&gt;现在对个人和组织（没见提是不是非盈利性）是免费注册的。貌似cloudflare，hstspreload.org 等大公司认可为顶级域名。&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://www.zigecn.eu.org/4a17b156.html"/>
-    <id>https://www.zigecn.eu.org/4a17b156.html</id>
-    <published>2022-07-02T03:27:39.817Z</published>
-    <updated>2022-07-10T08:19:20.658Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Office 365 E5 账号申请及永久续期教程</title>
     <link href="https://www.zigecn.eu.org/ee2a51ed.html"/>
     <id>https://www.zigecn.eu.org/ee2a51ed.html</id>
-    <published>2022-07-01T09:15:24.000Z</published>
-    <updated>2022-07-10T08:16:06.385Z</updated>
+    <published>2022-07-03T06:23:24.000Z</published>
+    <updated>2022-07-10T08:27:18.145Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;续订成功通知&lt;br&gt;&lt;img src=&quot;http://pdsqzlt.tk/zz.jpg&quot; alt=&quot;续订成功&quot; title=&quot;续订成功&quot;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Github Pages+Hexo搭建静态博客并自定义域名</title>
+    <link href="https://www.zigecn.eu.org/9b2b00ac.html"/>
+    <id>https://www.zigecn.eu.org/9b2b00ac.html</id>
+    <published>2022-07-02T10:15:24.000Z</published>
+    <updated>2022-07-10T08:52:19.990Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文讲述的Hexo博客搭建主要是配合GitHub来进行部署，不需要购买任何服务器。&lt;br&gt;搭建大致分为三个流程：准备工作、安装Hexo以及部署在GitHub，下面介绍详细流程。&lt;br&gt;（PS：本博客就是使用Hexo+GitHub的方法搭建的）&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;一：准备工作&quot;&gt;&lt;a href=&quot;#一：准备工作&quot; class=&quot;headerlink&quot; title=&quot;一：准备工作&quot;&gt;&lt;/a&gt;一：准备工作&lt;/h1&gt;&lt;h2 id=&quot;1、下载Node-js，并进行安装（详见注意事项）&quot;&gt;&lt;a href=&quot;#1、下载Node-js，并进行安装（详见注意事项）&quot; class=&quot;headerlink&quot; title=&quot;1、下载Node.js，并进行安装（详见注意事项）&quot;&gt;&lt;/a&gt;1、下载&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt;，并进行安装（详见注意事项）&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;1.双击打开安装包&lt;br&gt; 2.疯狂点击下一步进行安装&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
     
     
@@ -98,18 +123,14 @@
   </entry>
   
   <entry>
-    <title>Github Pages+Hexo搭建静态博客</title>
-    <link href="https://www.zigecn.eu.org/9b2b00ac.html"/>
-    <id>https://www.zigecn.eu.org/9b2b00ac.html</id>
-    <published>2022-07-01T09:15:24.000Z</published>
-    <updated>2022-07-10T08:16:37.194Z</updated>
+    <title>Hello World</title>
+    <link href="https://www.zigecn.eu.org/4a17b156.html"/>
+    <id>https://www.zigecn.eu.org/4a17b156.html</id>
+    <published>2022-07-01T02:15:24.000Z</published>
+    <updated>2022-07-10T08:26:47.665Z</updated>
     
     
-    <summary type="html">&lt;p&gt;本文讲述的Hexo博客搭建主要是配合GitHub来进行部署，不需要购买任何服务器。&lt;br&gt;搭建大致分为三个流程：准备工作、安装Hexo以及部署在GitHub，下面介绍详细流程。&lt;br&gt;（PS：本博客就是使用Hexo+GitHub的方法搭建的）&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;一：准备工作&quot;&gt;&lt;a href=&quot;#一：准备工作&quot; class=&quot;headerlink&quot; title=&quot;一：准备工作&quot;&gt;&lt;/a&gt;一：准备工作&lt;/h1&gt;&lt;h2 id=&quot;1、下载Node-js，并进行安装（详见注意事项）&quot;&gt;&lt;a href=&quot;#1、下载Node-js，并进行安装（详见注意事项）&quot; class=&quot;headerlink&quot; title=&quot;1、下载Node.js，并进行安装（详见注意事项）&quot;&gt;&lt;/a&gt;1、下载&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt;，并进行安装（详见注意事项）&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;1.双击打开安装包&lt;br&gt; 2.疯狂点击下一步进行安装&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
     
     
     
