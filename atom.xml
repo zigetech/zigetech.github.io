@@ -6,7 +6,7 @@
   <link href="https://www.zigecn.eu.org/atom.xml" rel="self"/>
   
   <link href="https://www.zigecn.eu.org/"/>
-  <updated>2022-07-12T03:50:01.082Z</updated>
+  <updated>2022-07-12T12:03:03.252Z</updated>
   <id>https://www.zigecn.eu.org/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用cloudflare制作TikTok像站</title>
+    <link href="https://www.zigecn.eu.org/25c2ca23.html"/>
+    <id>https://www.zigecn.eu.org/25c2ca23.html</id>
+    <published>2022-07-12T10:48:03.000Z</published>
+    <updated>2022-07-12T12:03:03.252Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;使用说明&quot;&gt;&lt;a href=&quot;#使用说明&quot; class=&quot;headerlink&quot; title=&quot;使用说明&quot;&gt;&lt;/a&gt;使用说明&lt;/h1&gt;&lt;p&gt;本项目仍然是使用全球最大的CDN服务商——CloudFlare提供的&lt;code&gt;Workers&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;下面我将告诉你们自己搭建Tiktok镜像站点的方法，以解决在天朝无法访问Tiktok的问题。&lt;/p&gt;
+&lt;h1 id=&quot;开启workers&quot;&gt;&lt;a href=&quot;#开启workers&quot; class=&quot;headerlink&quot; title=&quot;开启workers&quot;&gt;&lt;/a&gt;开启workers&lt;/h1&gt;&lt;p&gt;在控制面板主页左侧可以找到&lt;code&gt;workers&lt;/code&gt;。&lt;br&gt;可以将&lt;code&gt;workers&lt;/code&gt;理解为cloudflare的一款proxy服务，这个服务的一大优点就是自带CDN。按照官方的说法：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;构建无服务器应用程序并在全球范围内即时部署，从而获得卓越的性能、可靠性和规模性。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Github 访问慢？加速访问 Github 的两种方案，简单粗暴</title>

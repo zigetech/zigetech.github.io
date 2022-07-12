@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta
+        name="keywords"
+        content="大陆访问Tiktok,Tiktok镜像站,使用cloudflare制作TikTok,镜像Tiktok,cloudflare workers镜像TikTok,子哥科技 子哥的小破站"
+      />
+       
+      <meta name="description" content="子哥的小破站，每天分享一些Wordpress建站经验、白嫖技巧......." />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>使用cloudflare制作TikTok像站 |  子哥の小破站</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+  
+ 
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?aa66b369cadc21a4520f414075f34892";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="子哥の小破站" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
+      
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-使用cloudflare制作TikTok镜像站"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  使用cloudflare制作TikTok像站
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/25c2ca23.html" class="article-date">
+  <time datetime="2022-07-12T10:48:03.000Z" itemprop="datePublished">2022-07-12</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.3k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">5 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h1><p>本项目仍然是使用全球最大的CDN服务商——CloudFlare提供的<code>Workers</code>。</p>
+<p>下面我将告诉你们自己搭建Tiktok镜像站点的方法，以解决在天朝无法访问Tiktok的问题。</p>
+<h1 id="开启workers"><a href="#开启workers" class="headerlink" title="开启workers"></a>开启workers</h1><p>在控制面板主页左侧可以找到<code>workers</code>。<br>可以将<code>workers</code>理解为cloudflare的一款proxy服务，这个服务的一大优点就是自带CDN。按照官方的说法：</p>
+<blockquote>
+<p>构建无服务器应用程序并在全球范围内即时部署，从而获得卓越的性能、可靠性和规模性。</p>
+</blockquote>
+<span id="more"></span>
+<p><img src="http://zigeltd.eu.org/?/images/2022/07/12/hFSjhW5lQ5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-07-12%20191038.png" alt="找到Workers"></p>
+<p>如图所示，点击<code>创建服务</code>，右侧显示每天的额度，如果只是搭建个人服务这些额度绰绰有余了。下方会显示所有已经搭建的服务。<br><img src="http://zigeltd.eu.org/?/images/2022/07/12/aPRxACYwDc/v2-0f300582f5820076cfad4547caca1d87_720w.jpg" alt="创建服务"></p>
+<p>进入<code>创建服务</code>页面后，我们要稍微配置一下这个服务名称，将他改为自己心仪的名称，<del>因为以后我们要用他访问镜像站</del>（2022年后workers.dev就被墙了）<br><img src="http://zigeltd.eu.org/?/images/2022/07/12/IuoDDragZw/v2-f5bdf69a578ca901215b48d881e31523_r.jpg" alt="创建函数"></p>
+<p>这样我们的服务就搭建好了。但是我们还需要修改代码。转到<code>控制界面</code>，可以找到右下角有一个<code>快速编辑</code>的按钮。<br><img src="http://zigeltd.eu.org/?/images/2022/07/12/iOQXTHdYGG/v2-5908f6e3bd67091d62fb454d6b16f21e_720w.jpg" alt="控制界面"></p>
+<p>左边<code>修改代码</code>，下方<code>部署</code>，右侧可以选择<code>预览窗口</code>，以及打开链接。</p>
+<blockquote>
+<p>一般我们就打开这个页面，把下方的代码复制进去，点击<code>保存部署</code>，然后输入链接就可以直接访问Tiktok镜像站了。<br><img src="http://zigeltd.eu.org/?/images/2022/07/12/3GZXvdnoYw/v2-86fe48f5e898614c4d227ea5bd4b896f_720w.jpg" alt="部署代码"></p>
+</blockquote>
+<h1 id="代码内容"><a href="#代码内容" class="headerlink" title="代码内容"></a>代码内容</h1><p>原来代码设置的是Google的镜像站，我这里改成Tiktok了。我们直接复制贴到<code>workers</code>里面即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br></pre></td><td class="code"><pre><span class="line">// 你要镜像的网站.</span><br><span class="line">const upstream = &#x27;www.tiktok.com&#x27;</span><br><span class="line"></span><br><span class="line">// 镜像网站的目录，比如你想镜像某个网站的二级目录则填写二级目录的目录名，镜像 google 用不到，默认即可.</span><br><span class="line">const upstream_path = &#x27;/&#x27;</span><br><span class="line"></span><br><span class="line">// 镜像站是否有手机访问专用网址，没有则填一样的.</span><br><span class="line">const upstream_mobile = &#x27;www.tiktok.com&#x27;</span><br><span class="line"></span><br><span class="line">// 屏蔽国家和地区.</span><br><span class="line">const blocked_region = [&#x27;KP&#x27;, &#x27;SY&#x27;, &#x27;PK&#x27;, &#x27;CU&#x27;]</span><br><span class="line"></span><br><span class="line">// 屏蔽 IP 地址.</span><br><span class="line">const blocked_ip_address = [&#x27;0.0.0.0&#x27;, &#x27;127.0.0.1&#x27;]</span><br><span class="line"></span><br><span class="line">// 镜像站是否开启 HTTPS.</span><br><span class="line">const https = true</span><br><span class="line"></span><br><span class="line">// 文本替换.</span><br><span class="line">const replace_dict = &#123;</span><br><span class="line">    &#x27;$upstream&#x27;: &#x27;$custom_domain&#x27;,</span><br><span class="line">    &#x27;//tiktok.com&#x27;: &#x27;&#x27;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 以下保持默认，不要动</span><br><span class="line">addEventListener(&#x27;fetch&#x27;, event =&gt; &#123;</span><br><span class="line">    event.respondWith(fetchAndApply(event.request));</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">async function fetchAndApply(request) &#123;</span><br><span class="line"></span><br><span class="line">    const region = request.headers.get(&#x27;cf-ipcountry&#x27;).toUpperCase();</span><br><span class="line">    const ip_address = request.headers.get(&#x27;cf-connecting-ip&#x27;);</span><br><span class="line">    const user_agent = request.headers.get(&#x27;user-agent&#x27;);</span><br><span class="line"></span><br><span class="line">    let response = null;</span><br><span class="line">    let url = new URL(request.url);</span><br><span class="line">    let url_hostname = url.hostname;</span><br><span class="line"></span><br><span class="line">    if (https == true) &#123;</span><br><span class="line">        url.protocol = &#x27;https:&#x27;;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        url.protocol = &#x27;http:&#x27;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if (await device_status(user_agent)) &#123;</span><br><span class="line">        var upstream_domain = upstream;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        var upstream_domain = upstream_mobile;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    url.host = upstream_domain;</span><br><span class="line">    if (url.pathname == &#x27;/&#x27;) &#123;</span><br><span class="line">        url.pathname = upstream_path;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        url.pathname = upstream_path + url.pathname;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if (blocked_region.includes(region)) &#123;</span><br><span class="line">        response = new Response(&#x27;Access denied: WorkersProxy is not available in your region yet.&#x27;, &#123;</span><br><span class="line">            status: 403</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125; else if (blocked_ip_address.includes(ip_address)) &#123;</span><br><span class="line">        response = new Response(&#x27;Access denied: Your IP address is blocked by WorkersProxy.&#x27;, &#123;</span><br><span class="line">            status: 403</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        let method = request.method;</span><br><span class="line">        let request_headers = request.headers;</span><br><span class="line">        let new_request_headers = new Headers(request_headers);</span><br><span class="line"></span><br><span class="line">        new_request_headers.set(&#x27;Host&#x27;, url.hostname);</span><br><span class="line">        new_request_headers.set(&#x27;Referer&#x27;, url.hostname);</span><br><span class="line"></span><br><span class="line">        let original_response = await fetch(url.href, &#123;</span><br><span class="line">            method: method,</span><br><span class="line">            headers: new_request_headers</span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line">        let original_response_clone = original_response.clone();</span><br><span class="line">        let original_text = null;</span><br><span class="line">        let response_headers = original_response.headers;</span><br><span class="line">        let new_response_headers = new Headers(response_headers);</span><br><span class="line">        let status = original_response.status;</span><br><span class="line"></span><br><span class="line">        new_response_headers.set(&#x27;access-control-allow-origin&#x27;, &#x27;*&#x27;);</span><br><span class="line">        new_response_headers.set(&#x27;access-control-allow-credentials&#x27;, true);</span><br><span class="line">        new_response_headers.delete(&#x27;content-security-policy&#x27;);</span><br><span class="line">        new_response_headers.delete(&#x27;content-security-policy-report-only&#x27;);</span><br><span class="line">        new_response_headers.delete(&#x27;clear-site-data&#x27;);</span><br><span class="line"></span><br><span class="line">        const content_type = new_response_headers.get(&#x27;content-type&#x27;);</span><br><span class="line">        if (content_type.includes(&#x27;text/html&#x27;) &amp;&amp; content_type.includes(&#x27;UTF-8&#x27;)) &#123;</span><br><span class="line">            original_text = await replace_response_text(original_response_clone, upstream_domain, url_hostname);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            original_text = original_response_clone.body</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        response = new Response(original_text, &#123;</span><br><span class="line">            status,</span><br><span class="line">            headers: new_response_headers</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    return response;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">async function replace_response_text(response, upstream_domain, host_name) &#123;</span><br><span class="line">    let text = await response.text()</span><br><span class="line"></span><br><span class="line">    var i, j;</span><br><span class="line">    for (i in replace_dict) &#123;</span><br><span class="line">        j = replace_dict[i]</span><br><span class="line">        if (i == &#x27;$upstream&#x27;) &#123;</span><br><span class="line">            i = upstream_domain</span><br><span class="line">        &#125; else if (i == &#x27;$custom_domain&#x27;) &#123;</span><br><span class="line">            i = host_name</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (j == &#x27;$upstream&#x27;) &#123;</span><br><span class="line">            j = upstream_domain</span><br><span class="line">        &#125; else if (j == &#x27;$custom_domain&#x27;) &#123;</span><br><span class="line">            j = host_name</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        let re = new RegExp(i, &#x27;g&#x27;)</span><br><span class="line">        text = text.replace(re, j);</span><br><span class="line">    &#125;</span><br><span class="line">    return text;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">async function device_status(user_agent_info) &#123;</span><br><span class="line">    var agents = [&quot;Android&quot;, &quot;iPhone&quot;, &quot;SymbianOS&quot;, &quot;Windows Phone&quot;, &quot;iPad&quot;, &quot;iPod&quot;];</span><br><span class="line">    var flag = true;</span><br><span class="line">    for (var v = 0; v &lt; agents.length; v++) &#123;</span><br><span class="line">        if (user_agent_info.indexOf(agents[v]) &gt; 0) &#123;</span><br><span class="line">            flag = false;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return flag;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名"></a>自定义域名</h1><h2 id="托管域名到Cloudflare"><a href="#托管域名到Cloudflare" class="headerlink" title="托管域名到Cloudflare"></a>托管域名到Cloudflare</h2><p>就是把自己的域名转移到CloudFlare这个很简单，到Cloudflare 主页点击<code>添加站点</code>即可托管。</p>
+<h2 id="新增DNS解析"><a href="#新增DNS解析" class="headerlink" title="新增DNS解析"></a>新增DNS解析</h2><p>进入自己的域名后转到<code>DNS</code>界面，添加一条‘AAAA“DNS解析，IPv6为<code>100::</code>,最重要的是打开小黄云（即打开Cloudflare代理）<br>![DNS解析]（<a target="_blank" rel="noopener" href="http://zigeltd.eu.org/?/images/2022/07/12/5L8apau8GB/00c4d243e79aa4334a873dafe37c9396.png">http://zigeltd.eu.org/?/images/2022/07/12/5L8apau8GB/00c4d243e79aa4334a873dafe37c9396.png</a>)</p>
+<h2 id="关联域名"><a href="#关联域名" class="headerlink" title="关联域名"></a>关联域名</h2><p><strong>进入你的域名，不是你的首页！</strong>进入Workers，添加路由</p>
+<h1 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h1><p>现在已经无法打开Google了，显示错误（被撸爆也是很正常的吧），Github也被撸爆了。目前Tiktok还可以正常使用<br><img src="http://zigeltd.eu.org/?/images/2022/07/12/Fg16fPa3Ck/v2-4bcd1142c33ae15a7fbde408f73951e1_720w.jpg" alt="Google显示错误"><br>但是Tiktok还能正常访问：<br><img src="http://zigeltd.eu.org/?/images/2022/07/12/7x860qYeD2/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-07-12%20195612.png" alt="Tiktok"></p>
+<p>最后再附上我的Tiktok镜像站地址：<br>[Tiktok- Make You Day](<a target="_blank" rel="noopener" href="https://tik.zgtech.top/%EF%BC%89">https://tik.zgtech.top/）</a></p>
+<p>本文作者：Eric Zige<br />本文地址： <a href="https://www.zigecn.eu.org/25c2ca23.html">https://www.zigecn.eu.org/25c2ca23.html</a> <br />版权声明：本博客所有文章除特别声明外，均采用CC BY-NC-SA 4.0</div>许可协议。转载请注明出处！</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.zigecn.eu.org/25c2ca23.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/6ecb8f90.html" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Github 访问慢？加速访问 Github 的两种方案，简单粗暴</div>
+      </a>
+    
+  </nav>
+
+  
+   
+<div class="gitalk" id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+
+
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+
+
+<script src="https://cdn.staticfile.org/blueimp-md5/2.19.0/js/md5.min.js"></script>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '658c95680ff5dd336ce9',
+    clientSecret: '76f77f46369d1112ca7e0cbfe39bf3b27b45934f',
+    repo: 'GItalk',
+    owner: 'zigetech',
+    admin: ['zigetech'],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
+    
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2019-2022
+        <i class="ri-heart-fill heart_icon"></i> 子哥
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/Blog.png" alt="子哥の小破站"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+ 
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    
+
+  </div>
+</body>
+
+</html>
