@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.zigecn.eu.org/6ecb8f90.html</loc>
+    
+    <lastmod>2022-07-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.zigecn.eu.org/85a4b1c9.html</loc>
     
     <lastmod>2022-07-10</lastmod>
@@ -103,7 +112,7 @@
 
   <url>
     <loc>https://www.zigecn.eu.org/</loc>
-    <lastmod>2022-07-10</lastmod>
+    <lastmod>2022-07-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

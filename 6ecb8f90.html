@@ -9,7 +9,7 @@
        
       <meta
         name="keywords"
-        content="Github Pages,Gridea,Gridea搭建静态博客,子哥科技 子哥的小破站"
+        content="Gthub 加速 - Github无法访问 - 开发者边车辅助工具,子哥科技 子哥的小破站"
       />
        
       <meta name="description" content="子哥的小破站，每天分享一些Wordpress建站经验、白嫖技巧......." />
@@ -18,7 +18,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>使用Github Pages和Gridea搭建个人博客 |  子哥の小破站</title>
+      <title>Github 访问慢？加速访问 Github 的两种方案，简单粗暴 |  子哥の小破站</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -80,7 +80,7 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-使用Github-Pages和Gridea搭建个人博客"
+  id="post-Github-访问慢？加速访问-Github-的两种方案，简单粗暴"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -91,7 +91,7 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  使用Github Pages和Gridea搭建个人博客
+  Github 访问慢？加速访问 Github 的两种方案，简单粗暴
 </h1>
  
 
@@ -99,15 +99,15 @@ var _hmt = _hmt || [];
     </header>
      
     <div class="article-meta">
-      <a href="/85a4b1c9.html" class="article-date">
-  <time datetime="2022-07-10T08:24:27.000Z" itemprop="datePublished">2022-07-10</time>
+      <a href="/6ecb8f90.html" class="article-date">
+  <time datetime="2022-07-12T03:21:49.000Z" itemprop="datePublished">2022-07-12</time>
 </a>   
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">1k</span>
+            <span class="post-count">936</span>
         </span>
     </span>
 
@@ -116,7 +116,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">3 分钟</span>
+            <span class="post-count">4 分钟</span>
         </span>
     </span>
 </div>
@@ -131,35 +131,22 @@ var _hmt = _hmt || [];
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>之前我写过一个关于如何使用Hexo博客系统搭建静态博客的博文：<a href="https://www.zigecn.eu.org/9b2b00ac.html">博客原文</a></p>
-<p>有同学跟我说像Hexo这样的静态博客使用不方便，因为需要熟悉Git命令，对非计算机专业同学来说很不友好，增加了其学习成本。<br>不过我后来又发现了一个超级棒的静态博客写作客户端——Gridea。即使是非计算机同学，也能愉快地构建并管理博客。</p>
-<p>本文，我就来教大家如何来使用Github Pages和Gridea来搭建个人博客~</p>
-<h1 id="关于Github-Pages"><a href="#关于Github-Pages" class="headerlink" title="关于Github Pages"></a>关于Github Pages</h1><p>官方文档：</p>
-<blockquote>
-<p>GitHub Pages 是一项静态站点托管服务，它直接从 GitHub 上的仓库获取 HTML、CSS 和 JavaScript 文件，（可选）通过构建过程运行文件，然后发布网站。</p>
-</blockquote>
+  <p>Github 有很多优质资源，甚至有些开源免费的资源，比付费的还好用。我不是经常会贴一些 Github 的链接，但贴的链接，有些人反应打不开。</p>
+<p>今天我就分享几个常用的打开Github的方法：</p>
+<h1 id="修改本机的host文件"><a href="#修改本机的host文件" class="headerlink" title="修改本机的host文件"></a>修改本机的host文件</h1><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>像 Github 这种国际性大公司，肯定全球各个国家都部署了服务，虽然全球不同国家的用户都是访问同一个域名 ，比如，日本和美国的网友都访问 github.com，但背后访问的服务器不是同一个，为了提高访问速度，肯定优先访问本地服务器的服务。日本访问日本节点的服务器，美国访问美国节点的服务器。</p>
+<p>本来访问Github就如同其他网页一样正常，但是Github在中国没有服务器，所以中国网友访问 github.com 就会解析到国外。由于众所周知的原因，GFW就把 github.com 给墙了</p>
 <span id="more"></span>
-<p>emmm，总之，GitHub Pages会发布您推送到代码仓库的任何静态文件，你可以创建自己的静态文件或使用静态站点生成器（如Hexo）为你构建站点，然后就可以使用【用户名】.github.io域名访问你的博客网站了。<br>对了，是免费的哦~</p>
-<h1 id="关于Gridea"><a href="#关于Gridea" class="headerlink" title="关于Gridea"></a>关于Gridea</h1><p>官方文档：</p>
-<blockquote>
-<p>Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。</p>
-</blockquote>
-<p><a target="_blank" rel="noopener" href="https://gridea.dev/">Gridea</a>的方便就在于可以使用客户端直接编写代码，然后只要点击按钮就能发布，非常人性化。重要的是，其提供了Windows、Mac OS和Linux三种操作系统的客户端。Gridea的界面是这样的：<br><img src="https://pic3.zhimg.com/80/v2-700a119278166a70b2d352abe7c70d9e_720w.jpg" alt="Gridea" title="Gridea"><br>怎么样？是不是非常小清新？是不是迫不及待地想要开始了？！</p>
-<h1 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h1><h2 id="1-注册Github账号"><a href="#1-注册Github账号" class="headerlink" title="1.注册Github账号"></a>1.注册Github账号</h2><p>先去全球最大的同性恋交流平台——<a target="_blank" rel="noopener" href="https://www.github.com/">Github</a>上注册一个账号，登录。</p>
-<h2 id="2-创建仓库token"><a href="#2-创建仓库token" class="headerlink" title="2.创建仓库token"></a>2.创建仓库token</h2><p>登录后，先进入<a target="_blank" rel="noopener" href="https://github.com/settings/tokens/new">创建token</a>的页面，然后填写Note（相当于是个提示吧，因为你可能有多个token，便于区分用途），勾上repo即可，往下拉点Generate token。<br><img src="https://pic2.zhimg.com/80/v2-fa7f773e1925f1289bea9d53cc7aa20d_720w.jpg" alt="创建仓库token" title="创建仓库token"><br>然后点这个图标先复制，先保存起来吧，不然你下次再点开就看不到了，得重新生成<br><img src="https://pic3.zhimg.com/80/v2-8ea52e82214c58feed2958471add7c56_720w.jpg" alt="复制仓库token" title="复制仓库token"></p>
-<h2 id="3-创建公共仓库"><a href="#3-创建公共仓库" class="headerlink" title="3 创建公共仓库"></a>3 创建公共仓库</h2><p>点击右上角头像左边的+号，然后选择<code>New repository</code>。<br><img src="https://pic1.zhimg.com/80/v2-c28e327d193e1d1cfe071519fcbf50c8_720w.jpg" alt="创建公共仓库" title="创建公共仓库"></p>
-<p>填写好信息，点下面的<code>Create repository</code>。</p>
-<blockquote>
-<p>注意：Repository name填【你的用户名】./github.io，Description可选填。<br><img src="https://pic3.zhimg.com/80/v2-98e889c5e83fdf57878aa8b4177bee42_720w.jpg" alt="创建公共仓库" title="创建公共仓库"><br>创建成功后，就是只有一个只有README.md的仓库，这时你就可以在浏览器访问【你的用户名】.github.io，可以看到内容，就可以了。</p>
-</blockquote>
-<h1 id="运行Gridea"><a href="#运行Gridea" class="headerlink" title="运行Gridea"></a>运行Gridea</h1><p>去<a target="_blank" rel="noopener" href="https://gridea.dev/">Gridea官网</a>下载你操作系统对应的安装包，安装，运行。第一次使用要进行配置，点击<code>远程</code>进行配置。<br><img src="https://pic4.zhimg.com/80/v2-da2e52949c2d435919ead1bb8dde4c03_720w.jpg" alt="Gridea配置" title="Gridea配置"></p>
-<blockquote>
-<p>平台要选<code>Github Pages</code>，域名和仓库名称填Github的仓库名，分支填<code>main</code>（原先的<code>master</code>有争议，现在已全面改为<code>main</code>），令牌就是刚刚要你复制的token。另外你要绑定域名的话，CNAME就填你的域名。<br>如果你不会自定义域名的话，请参考这篇博客：<a href="https://www.zigecn.eu.org/9b2b00ac.html">使用Hexo+Github搭建博客，并自定义域名</a></p>
-</blockquote>
-<p>填写完成后，点<code>保存</code>，然后检测一下<code>远程连接</code>，没问题的话就点左下角的<code>同步</code>。<br>这样你就可以访问<code>xxx.github.io</code>来打开你的博客网站了，如果你设置了CNAME，就是访问你的域名。文章的管理就可以直接在这个客户端上操作，同时也可以选择你喜欢的主题，自己多去研究研究吧，哈哈。另外，附上一些答疑。</p>
-<p>大家可以看到，我写的这个教程主要是发的截图，并没有写一行代码，这就是使用Gridea客户端的好处。</p>
-<p>OK，接下来你就自己去折腾你的博客吧~，有问题敬请评论。</p>
-<p>本文作者：Eric Zige<br />本文地址： <a href="https://www.zigecn.eu.org/85a4b1c9.html">https://www.zigecn.eu.org/85a4b1c9.html</a> <br />版权声明：本博客所有文章除特别声明外，均采用CC BY-NC-SA 4.0</div>许可协议。转载请注明出处！</p>
+<p>这里实现的方式就是利用 DNS解析服务器，这个DNS解析服务器相当一个中间件一样，记录这域名和 IP 的映射关系。</p>
+<p>但除了中国以外的国家还有很多，我们可以挑选一些离我们近的国家，访问 Github 部署在他们国家的服务器，这样就能够正常访问啦~</p>
+<h2 id="开始操作"><a href="#开始操作" class="headerlink" title="开始操作"></a>开始操作</h2><h3 id="找CDN节点"><a href="#找CDN节点" class="headerlink" title="找CDN节点"></a>找CDN节点</h3><p>第一步不用我们做了，有网友维护了 Github 全新、优秀的节点。当然，这个作者也将它们开源到 [Github 520]（<a target="_blank" rel="noopener" href="https://github.com/521xueweihan/GitHub520%EF%BC%89%E3%80%82">https://github.com/521xueweihan/GitHub520）。</a><br><img src="http://zigeltd.eu.org/?/images/2022/07/12/DTYttAG8iY/image-20220604204900211.png" alt="Github 520"></p>
+<h3 id="复制节点内容"><a href="#复制节点内容" class="headerlink" title="复制节点内容"></a>复制节点内容</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"># GitHub520 Host Start</span><br><span class="line">140.82.112.25                 alive.github.com</span><br><span class="line">140.82.112.25                 live.github.com</span><br><span class="line">185.199.108.154               github.githubassets.com</span><br><span class="line">140.82.114.21                 central.github.com</span><br><span class="line">185.199.108.133               desktop.githubusercontent.com</span><br><span class="line">185.199.108.153               assets-cdn.github.com</span><br><span class="line">185.199.108.133               camo.githubusercontent.com</span><br><span class="line">185.199.108.133               github.map.fastly.net</span><br><span class="line">199.232.69.194                github.global.ssl.fastly.net</span><br><span class="line">140.82.112.4                  gist.github.com</span><br><span class="line">185.199.108.153               github.io</span><br><span class="line">140.82.113.3                  github.com</span><br><span class="line">192.0.66.2                    github.blog</span><br><span class="line">140.82.114.5                  api.github.com</span><br><span class="line">185.199.108.133               raw.githubusercontent.com</span><br><span class="line">185.199.108.133               user-images.githubusercontent.com</span><br><span class="line">185.199.108.133               favicons.githubusercontent.com</span><br><span class="line">185.199.108.133               avatars5.githubusercontent.com</span><br><span class="line">185.199.108.133               avatars4.githubusercontent.com</span><br><span class="line">185.199.108.133               avatars3.githubusercontent.com</span><br><span class="line">185.199.108.133               avatars2.githubusercontent.com</span><br><span class="line">185.199.108.133               avatars1.githubusercontent.com</span><br><span class="line">185.199.108.133               avatars0.githubusercontent.com</span><br><span class="line">185.199.108.133               avatars.githubusercontent.com</span><br><span class="line">140.82.114.9                  codeload.github.com</span><br><span class="line">54.231.200.129                github-cloud.s3.amazonaws.com</span><br><span class="line">52.217.33.196                 github-com.s3.amazonaws.com</span><br><span class="line">52.216.93.147                 github-production-release-asset-2e65be.s3.amazonaws.com</span><br><span class="line">52.216.93.147                 github-production-user-asset-6210df.s3.amazonaws.com</span><br><span class="line">52.217.207.33                 github-production-repository-file-5c1aeb.s3.amazonaws.com</span><br><span class="line">185.199.108.153               githubstatus.com</span><br><span class="line">64.71.144.211                 github.community</span><br><span class="line">23.100.27.125                 github.dev</span><br><span class="line">140.82.113.21                 collector.github.com</span><br><span class="line">13.107.42.16                  pipelines.actions.githubusercontent.com</span><br><span class="line">185.199.108.133               media.githubusercontent.com</span><br><span class="line">185.199.108.133               cloud.githubusercontent.com</span><br><span class="line">185.199.108.133               objects.githubusercontent.com</span><br></pre></td></tr></table></figure>
+
+<h3 id="找到并修改电脑上-hosts文件"><a href="#找到并修改电脑上-hosts文件" class="headerlink" title="找到并修改电脑上 hosts文件"></a>找到并修改电脑上 hosts文件</h3><p>Windows：<code>C:\Windows\System32\drivers\etc\hosts</code></p>
+<p>Mac：<code>/etc/hosts</code><br>接着以<code>管理员身份</code>用<code>文本编辑器</code>打开<code> hosts 文件</code>，并将上面 Github 520 的<code>节点内容 </code>都复制粘贴到<code>最后面</code>。</p>
+<h3 id="刷新DNS缓存"><a href="#刷新DNS缓存" class="headerlink" title="刷新DNS缓存"></a>刷新DNS缓存</h3><p>使用 CMD 打开 DOSS 界面，输入命令：<br>Windows：<code>ipconfig /flushdns</code><br>Mac os：<code>sudo killall -HUP mDNSResponder</code><br>OK，各位可以再打开 <a target="_blank" rel="noopener" href="https://www.github.com/">Github</a> 看看，是否可以正常访问Github了</p>
+<h1 id="dev-sidecar-）"><a href="#dev-sidecar-）" class="headerlink" title="dev-sidecar(）"></a>dev-sidecar(）</h1><p>第二种方案更加简单，只要下载软件就行了。这个项目叫 <a target="_blank" rel="noopener" href="https://github.com/docmirror/dev-sidecar/releases">开发者边车辅助工具</a>，解决 Github 打不开、用户头像无法加载、releases 无法上传下载、git-clone、git-pull、git-push.git.exe 失败等问题。</p>
+<p>在[下载页面]（<a target="_blank" rel="noopener" href="https://github.com/docmirror/dev-sidecar/releases)%E4%B8%8B%E8%BD%BD%E5%AF%B9%E5%BA%94%E4%BD%A0%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%8C%E6%94%AF%E6%8C%81">https://github.com/docmirror/dev-sidecar/releases)下载对应你操作系统的软件，支持</a> Mac、Windows、Linux。<br>下载解压到本地，双击打开。安装即可</p>
+<p>本文作者：Eric Zige<br />本文地址： <a href="https://www.zigecn.eu.org/6ecb8f90.html">https://www.zigecn.eu.org/6ecb8f90.html</a> <br />版权声明：本博客所有文章除特别声明外，均采用CC BY-NC-SA 4.0</div>许可协议。转载请注明出处！</p>
  
       <!-- reward -->
       
@@ -212,7 +199,7 @@ var _hmt = _hmt || [];
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.zigecn.eu.org/85a4b1c9.html" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.zigecn.eu.org/6ecb8f90.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -223,19 +210,10 @@ var _hmt = _hmt || [];
    
   <nav class="article-nav">
     
-      <a href="/6ecb8f90.html" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            Github 访问慢？加速访问 Github 的两种方案，简单粗暴
-          
-        </div>
-      </a>
     
-    
-      <a href="/65fc21bd.html" class="article-nav-link">
+      <a href="/85a4b1c9.html" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">免费申请EU.org顶级域名</div>
+        <div class="article-nav-title">使用Github Pages和Gridea搭建个人博客</div>
       </a>
     
   </nav>
