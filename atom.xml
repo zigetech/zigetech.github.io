@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>子哥的小破站-子哥科技</title>
+  <title>子哥の小破站 |热爱</title>
   
   <subtitle>从此只有眼前路，没有身后身</subtitle>
   <link href="https://www.zigecn.eu.org/atom.xml" rel="self"/>
   
   <link href="https://www.zigecn.eu.org/"/>
-  <updated>2022-07-12T12:03:03.252Z</updated>
+  <updated>2022-07-14T03:14:37.664Z</updated>
   <id>https://www.zigecn.eu.org/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>完美解决Github个人博客不被百度收录的问题“</title>
+    <link href="https://www.zigecn.eu.org/a43cac6d.html"/>
+    <id>https://www.zigecn.eu.org/a43cac6d.html</id>
+    <published>2022-07-14T02:30:01.000Z</published>
+    <updated>2022-07-14T03:14:37.664Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;p&gt;我这个博客本来是挂在 GitHub Pages，但是后来发现Github把百度的爬虫给办了（好像是百度的爬虫爬的太狠，影响Github pages的正常使用），这也就导致了我部署在Github上的个人博客无法被收录。后来Cloudflare Page推出，这个问题也就迎刃而解了。&lt;br&gt;为了让广大网友不被此问题侵扰，特写此文。&lt;/p&gt;
+&lt;h1 id=&quot;Cloudflare-Pages的优点&quot;&gt;&lt;a href=&quot;#Cloudflare-Pages的优点&quot; class=&quot;headerlink&quot; title=&quot;Cloudflare Pages的优点&quot;&gt;&lt;/a&gt;Cloudflare Pages的优点&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;CloudFlare Pages 没被墙&lt;/li&gt;
+&lt;li&gt;CloudFlare Pages 自选IP后尤其是移动，速度比隔壁 Vercel 还要快不少，不信你可以看我博客的评论区，评论系统就是部署在 Vercel 东京机房的（&lt;/li&gt;
+&lt;li&gt;CloudFlare Pages 本身就集成了 CI/CD，而且我个人感觉比 GitHub Action 以及 Travis CI 稳定，也省得折腾，唯一的限制就是每个月免费构建额度是500次，但这也已经很够用了吧（&lt;/li&gt;
+&lt;li&gt;CloudFlare Pages 的自动化构建可以从 private repository 拉取源文件，不像 GitHub Pages 必须是 public repo&lt;/li&gt;
+&lt;li&gt;支持多个自定义域名&lt;/li&gt;
+&lt;li&gt;CloudFlare Pages 没有 ban 掉百度爬虫，百度收录正常</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>使用cloudflare制作TikTok像站</title>
