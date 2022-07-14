@@ -6,7 +6,7 @@
   <link href="https://www.zigecn.eu.org/atom.xml" rel="self"/>
   
   <link href="https://www.zigecn.eu.org/"/>
-  <updated>2022-07-14T03:14:37.664Z</updated>
+  <updated>2022-07-14T03:24:05.807Z</updated>
   <id>https://www.zigecn.eu.org/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zigecn.eu.org/a43cac6d.html"/>
     <id>https://www.zigecn.eu.org/a43cac6d.html</id>
     <published>2022-07-14T02:30:01.000Z</published>
-    <updated>2022-07-14T03:14:37.664Z</updated>
+    <updated>2022-07-14T03:24:05.807Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;p&gt;我这个博客本来是挂在 GitHub Pages，但是后来发现Github把百度的爬虫给办了（好像是百度的爬虫爬的太狠，影响Github pages的正常使用），这也就导致了我部署在Github上的个人博客无法被收录。后来Cloudflare Page推出，这个问题也就迎刃而解了。&lt;br&gt;为了让广大网友不被此问题侵扰，特写此文。&lt;/p&gt;
